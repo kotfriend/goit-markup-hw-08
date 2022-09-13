@@ -1,0 +1,32 @@
+.terms {
+    @extend %flex-function;
+    justify-content: center;
+}
+.terms__label {
+    @extend %flex-function;
+    font-family: var(--main-font);
+    @include font (14px, 400, 24px);
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    &::before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 1px solid #212121;
+        cursor: pointer;
+        margin-right: 7px;
+
+        .terms__checkbox:checked+& {
+            background-image: url(../images/icon-check.svg);
+            background-position: center;
+            border: var(--accent-color);
+        }
+    }
+}
+.terms__link {
+    color: var(--accent-color);
+}

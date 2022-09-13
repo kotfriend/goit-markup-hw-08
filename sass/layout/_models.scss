@@ -1,0 +1,33 @@
+.models {
+    padding-top: 47px;
+    padding-bottom: 97px;
+}
+.models__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.models__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+}
+.models__conteiner_text {
+    position: relative;
+}
+.models__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: var(--accent-color);
+    @include font (14px, 700, 16px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

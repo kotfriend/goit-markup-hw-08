@@ -1,0 +1,33 @@
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.customers__list {
+    @extend %flex-function;
+    justify-content: space-between;
+}
+.customers__link {
+    @extend %flex-function;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+.customers__icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .customers__link:hover &,
+    .customers__link:focus & {
+        fill: var(--accent-color);
+    }
+}

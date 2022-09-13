@@ -1,0 +1,24 @@
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/_visually-hidden";
+
+@import "./base/common";
+@import "./base/_conteiner";
+
+@import "./components/_title";
+@import "./components/logo";
+@import "./components/backdrop-modal";
+@import "./components/modal";
+@import "./components/buttons";
+@import "./components/social-links";
+@import "./components/terms";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/benefits";
+@import "./layout/models";
+@import "./layout/salers";
+@import "./layout/customers";
+@import "./layout/model-space";
+@import "./layout/footer";

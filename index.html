@@ -33,6 +33,12 @@
             height="52"
           />
         </a>
+       <button type="button" class="burger" data-menu-button>
+        <svg class="burger__icon">
+          <use href="./images/sprite.svg#icon-menu_24px"></use>
+        </svg>
+       </button>
+
         <nav class="navigation">
           <ul class="menu list">
             <li class="menu__item">
@@ -66,22 +72,70 @@
             >
           </li>
         </ul>
+
+        <div class="header-modal" data-menu>
+          <button class="header-modal__button-closed" data-menu-close>
+            <svg class="header-modal__icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="header-modal__menu list">
+            <li class="header-modal__item">
+              <a href="" class="header-modal__link link">Про нас</a>
+            </li>
+            <li class="header-modal__item">
+              <a href="./models.html" class="header-modal__link link">Модельний ряд</a>
+            </li>
+            <li class="header-modal__item">
+              <a href="" class="header-modal__link link">Контакти</a>
+            </li>
+          </ul>
+
+                  <ul class="header-modal__contact list">
+          <li class="header-modal__contact-item">
+            <a class="header-modal__contact-link link" href="tel:+380961792791">
+              +38 096 179 27 91
+            </a>
+          </li>
+          <li class="header-modal__contact-item">
+            <a class="header-modal__contact-link-little link" href="tel:+380980846695">
+              +38 098 084 66 95
+            </a>
+          </li>
+        </ul>
+        <ul class="header-modal__social list">
+          <li class="header-modal__social-item">
+            <a href="" class="header-modal__social-link link">Instagram</a>
+          </li>
+          <li class="header-modal__social-item">
+            <a href="" class="header-modal__social-link link">Twitter</a>
+          </li>
+          <li class="header-modal__social-item">
+            <a href="" class="header-modal__social-link link">Facebook</a>
+          </li>
+          <li class="header-modal__social-item">
+            <a href="" class="header-modal__social-link link">LinkedIn</a>
+          </li>
+        </ul>
+        </div>
+
       </div>
     </header>
 
     <main>
       <!--HERO-->
-      <section class="hero">
+    
+     <!-- <section class="hero">
         <div class="conteiner">
           <h1 class="hero__title" lang="en">Apple Office Slavuta</h1>
           <button class="main-button" type="button" data-modal-open>
             Зворотній звʼязок
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--BENEFITS-->
-      <section class="benefits">
+    <section class="benefits">
         <div class="conteiner">
           <ul class="benefits__list">
             <li class="benefits__item list">
@@ -137,7 +191,7 @@
       </section>
 
       <!--MODELS-->
-      <section class="models">
+    <!--  <section class="models">
         <div class="conteiner">
           <h2 class="title">Модельний ряд</h2>
           <ul class="models__list list">
@@ -239,10 +293,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--SALERS-->
-      <section class="salers">
+ <!--     <section class="salers">
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
           <ul class="salers__list list">
@@ -420,10 +474,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>  -->
 
       <!--CUSTOMERS-->
-      <section class="customers">
+   <!--   <section class="customers">
         <div class="conteiner">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="customers__list list">
@@ -472,10 +526,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>  -->
 
     <!--FOOTER-->
-    <footer class="footer">
+ <!--   <footer class="footer">
       <div class="conteiner">
         <div class="footer__conteiner_adress">
           <a class="logo link" href="./index.html">
@@ -574,10 +628,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer>  -->
 
     <!--MODAL WINDOWS-->
-    <div class="backdrop is-hidden" data-modal>
+ <!--   <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-closed" data-modal-close>
           <svg class="button-closed__icon">
@@ -657,6 +711,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>  -->
+ <script src="./js/header-modal.js"></script>
   </body>
 </html>

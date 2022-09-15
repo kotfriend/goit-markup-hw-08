@@ -1,96 +1,117 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-    background-color: #ffffff;
-    padding: 40px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .modal__form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .modal__title {
-    margin-bottom: 12px;
-    font-family: var(--main-font);
-    @include font (20px, 700, 23px);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+  margin-bottom: 12px;
+  font-family: var(--main-font);
+  @include font(20px, 700, 30px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 .modal__label {
-    font-family: var(--main-font);
-    @include font (12px, 400, 14px);
-    letter-spacing: 0.01em;
-    color: #757575;
+  font-family: var(--main-font);
+  @include font(12px, 400, 14px);
+  letter-spacing: 0.01em;
+  color: #757575;
 
-    &:not(:first-child) {
-        margin-top: 10px;
-    }
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 .modal__conteiner_input {
-    position: relative;
-    display: block;
-    margin-top: 4px;
+  position: relative;
+  display: block;
+  margin-top: 4px;
 }
 .modal__input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding-left: 42px;
-    font-family: var(--main-font);
-    @include font (12px, 400, 14px);
-    letter-spacing: 0.01em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  font-family: var(--main-font);
+  @include font(12px, 400, 14px);
+  letter-spacing: 0.01em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 .modal__icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal__input:focus+& {
-        fill: var(--accent-color);
-    }
+  .modal__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
-.modal__textarea {
-    width: 100%;
-    height: 96px;
-    margin-top: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-    font-family: var(--main-font);
-    @include font (12px, 400, 14px);
-    letter-spacing: 0.01em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:focus {
-        outline: none;
-        border-color: var(--accent-color);
-    }
+.modal__textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  font-family: var(--main-font);
+  @include font(14px, 400, 16px);
+  letter-spacing: 0.01em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-family: var(--main-font);
+    @include font(14px, 400, 16px);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+
+  .modal__title {
+    @include font(20px, 700, 23px);
+  }
+
+  .modal__textarea {
+    @include font(12px, 400, 14px);
 
     &::placeholder {
-        font-family: var(--main-font);
-        @include font (12px, 400, 14px);
-        letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
+      @include font(12px, 400, 14px);
     }
+  }
 }

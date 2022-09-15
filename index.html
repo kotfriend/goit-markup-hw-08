@@ -191,7 +191,7 @@
       </section>
 
       <!--MODELS-->
-    <!--  <section class="models">
+    <section class="models">
         <div class="conteiner">
           <h2 class="title">Модельний ряд</h2>
           <ul class="models__list list">
@@ -293,21 +293,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--SALERS-->
- <!--     <section class="salers">
+      <section class="salers">
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
           <ul class="salers__list list">
             <li class="salers__item">
-              <img
-                class="salers__img"
-                src="./images/salers/saler-img-1.jpg"
-                alt="Перший продавець"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./images/salers/saler-img-1.jpg 1x, ./images/salers/saler-img-1@2x.jpg 2x" media="(min-width: 1200px">
+                <source srcset="./images/salers/saler-img-1_tablet.jpg 1x, ./images/salers/saler-img-1@2x.jpg 2x" media="(min-width: 768px">
+                <source srcset="./images/salers/saler-img-1_phone.jpg 1x, ./images/salers/saler-img-1@2x.jpg 2x" media="(min-width: 480px">
+                <img class="salers__img" 
+                src="./images/salers/saler-img-1_phone.jpg" alt="Перший продавець"/>
+                </picture>
               <div class="salers__conteiner_text">
                 <h3 class="salers__title">Євгеній Шульженко</h3>
                 <p class="salers__prof">Закупник</p>
@@ -346,10 +346,8 @@
             <li class="salers__item">
               <img
                 class="salers__img"
-                src="./images/salers/saler-img-2.jpg"
+                src="./images/salers/saler-img-2_phone.jpg"
                 alt="Другий продавець"
-                width="270"
-                height="260"
               />
               <div class="salers__conteiner_text">
                 <h3 class="salers__title">Дмитро Шопін</h3>
@@ -389,10 +387,8 @@
             <li class="salers__item">
               <img
                 class="salers__img"
-                src="./images/salers/saler-img-3.jpg"
+                src="./images/salers/saler-img-3_phone.jpg"
                 alt="Третій продавець"
-                width="270"
-                height="260"
               />
               <div class="salers__conteiner_text">
                 <h3 class="salers__title">Ольга Шопіна</h3>
@@ -432,10 +428,8 @@
             <li class="salers__item">
               <img
                 class="salers__img"
-                src="./images/salers/saler-img-4.jpg"
+                src="./images/salers/saler-img-4_phone.jpg"
                 alt="Третій продавець"
-                width="270"
-                height="260"
               />
               <div class="salers__conteiner_text">
                 <h3 class="salers__title">Мілана Шульженко</h3>
@@ -474,7 +468,7 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>
 
       <!--CUSTOMERS-->
    <!--   <section class="customers">

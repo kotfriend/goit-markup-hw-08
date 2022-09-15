@@ -1,7 +1,29 @@
-.title {
-    @include font (36px, 700, 42px);
+@media screen and (max-width: 767px) {
+  .title {
+    @include font(28px, 700, 33px);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    margin-bottom: var(--title-block);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    @include font(28px, 700, 33px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    @include font(36px, 700, 42px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }

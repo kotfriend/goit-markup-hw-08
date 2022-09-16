@@ -2,13 +2,11 @@
   .social-links {
     display: flex;
     justify-content: center;
-
-    .footer__conteiner_social & {
-      margin-top: 20px;
-    }
   }
   .social-links__item {
+      &:not(:last-child){
     margin-right: 10px;
+    }
   }
   .social-links__link {
     display: flex;
@@ -37,13 +35,11 @@
   .social-links {
     display: flex;
     justify-content: center;
-
-    .footer__conteiner_social & {
-      margin-top: 20px;
-    }
   }
   .social-links__item {
+      &:not(:last-child) {
     margin-right: 10px;
+      }
   }
   .social-links__link {
     display: flex;

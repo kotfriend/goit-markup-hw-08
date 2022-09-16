@@ -30,6 +30,9 @@
   width: 19px;
   height: 19px;
 }
+.header-modal__menu {
+  margin-bottom: 302px;
+}
 .header-modal__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -46,9 +49,6 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-.header-modal__contact {
-  margin-top: 302px;
 }
 .header-modal__contact-item {
   &:not(:last-child) {

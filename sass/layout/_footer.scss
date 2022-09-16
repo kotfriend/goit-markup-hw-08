@@ -4,7 +4,7 @@
     padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) {
+// @media screen and (max-width: 767px) {
     .footer__conteiner_adress {
         display: flex;
         flex-direction: column;
@@ -85,7 +85,6 @@
         fill: #FFFFFF;
         margin-left: 10px;
     }
-}
 
 @media screen and (min-width: 768px) {
     .footer__conteiner_adress {
@@ -133,7 +132,7 @@
     }
 
     .footer__conteiner_send-email {
-        margin-top: 60px;
+        margin-top: 0px;
     }
         .send-email {
         display: flex;

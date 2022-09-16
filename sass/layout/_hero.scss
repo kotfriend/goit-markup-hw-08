@@ -9,7 +9,7 @@
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+// @media screen and (max-width: 767px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -22,7 +22,6 @@
     color: #ffffff;
     margin-bottom: 30px;
   }
-}
 
 @media screen and (min-width: 768px) {
   .hero {

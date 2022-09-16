@@ -574,6 +574,7 @@ img {
 }
 
 .header-modal__social-link {
+  position: relative;
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 500;
@@ -1162,6 +1163,7 @@ img {
 .customers__link {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;

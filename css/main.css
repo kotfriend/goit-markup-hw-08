@@ -577,13 +577,16 @@ img {
   margin-top: 64px;
 }
 
+.header-modal__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .header-modal__social-item:not(:last-child):after {
   content: "";
   width: 22px;
   height: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-  margin-left: 10px;
   margin-right: 10px;
 }
 

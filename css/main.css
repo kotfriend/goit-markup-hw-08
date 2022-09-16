@@ -1602,6 +1602,7 @@ img {
   .footer__conteiner_adress {
     display: block;
     margin-right: 70px;
+    margin-bottom: 0px;
   }
   .adress__list {
     display: block;

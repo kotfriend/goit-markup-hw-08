@@ -31,6 +31,7 @@
     @extend %flex-function;
     justify-content: center;
     position: absolute;
+    z-index: 1;
     top: 8px;
     right: 8px;
     width: 30px;

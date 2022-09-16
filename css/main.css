@@ -76,7 +76,7 @@ img {
 .footer .conteiner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 @media screen and (min-width: 480px) {
   .conteiner {
@@ -97,11 +97,6 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer .conteiner {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer .conteiner {
     flex-direction: row;
@@ -520,7 +515,7 @@ img {
 }
 
 .header-modal__menu {
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .header-modal__item:not(:last-child) {
@@ -1167,8 +1162,6 @@ img {
 .customers__link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1361,7 +1354,6 @@ img {
 .footer__conteiner_social {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .footer__title {
@@ -1391,7 +1383,7 @@ img {
 .send-email__input {
   margin-right: 12px;
   padding: 15px 16px;
-  width: 450px;
+  width: 300px;
   height: 50px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);

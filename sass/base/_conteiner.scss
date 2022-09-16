@@ -16,7 +16,7 @@
   .footer & {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 480px) {
@@ -30,15 +30,6 @@
   @media screen and (min-width: 1200px) {
     width: 1200px;
     margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .conteiner {
-    
-    .footer & {
-      flex-direction: column;
-    }
   }
 }
 

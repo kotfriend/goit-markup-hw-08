@@ -86,8 +86,8 @@
 }
 .header-modal__social-link {
   position: relative;
-  font-family: var(--main-font);
-  @include font(18px, 500, 22px);
-  letter-spacing: 0.02em;
+  // font-family: var(--main-font);
+  // @include font(18px, 500, 22px);
+  // letter-spacing: 0.02em;
   color: var(--accent-color);
 }

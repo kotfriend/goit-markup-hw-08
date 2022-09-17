@@ -5,7 +5,7 @@
 .terms__label {
   @extend %flex-function;
   font-family: var(--main-font);
-  @include font(12px, 400, 14px);
+  @include font(9px, 400, 14px);
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;

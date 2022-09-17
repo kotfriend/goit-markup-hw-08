@@ -5,7 +5,7 @@
 .terms__label {
   @extend %flex-function;
   font-family: var(--main-font);
-  @include font(6px, 400, 10px);
+  @include font(12px, 400, 14px);
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
@@ -29,15 +29,4 @@
 }
 .terms__link {
   color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .terms__label {
-    @extend %flex-function;
-    font-family: var(--main-font);
-    @include font(12px, 400, 14px);
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }

@@ -28,8 +28,6 @@
 }
 
 .button-closed {
-    @extend %flex-function;
-    justify-content: center;
     position: absolute;
     z-index: 1;
     top: 8px;
@@ -37,8 +35,7 @@
     width: 30px;
     height: 30px;
     background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border: none;
     cursor: pointer;
 }
 .button-closed__icon {

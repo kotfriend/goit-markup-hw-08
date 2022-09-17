@@ -1,4 +1,4 @@
-.terms__label, .terms, .button-closed, .send-email .main-button {
+.terms__label, .terms, .send-email .main-button {
   display: flex;
   align-items: center;
 }
@@ -319,7 +319,6 @@ img {
 }
 
 .button-closed {
-  justify-content: center;
   position: absolute;
   z-index: 1;
   top: 8px;
@@ -327,8 +326,7 @@ img {
   width: 30px;
   height: 30px;
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+  border: none;
   cursor: pointer;
 }
 

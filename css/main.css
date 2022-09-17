@@ -578,7 +578,7 @@ img {
 }
 
 .header-modal__social-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header-modal__social-item:not(:last-child):after {
@@ -587,11 +587,15 @@ img {
   height: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header-modal__social-link {
-  position: relative;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
